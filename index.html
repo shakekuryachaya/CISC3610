@@ -1,32 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CISC 3610 Portfolio</title>
-    </head>
-    <body>
-        <h1>Welcome to CISC 3610 EM6: Multimedia Programming</h1>
-        <h2>Shake Kuryachaya</h2>
-        <br/>
-        <h3>Assignments</h3>
-        <ul>
-            <li><a href='01-cartoon/index.html'>01-cartoon</a></li>
-            <li><a href='02-animation/index.html'>02-animation</a></li>
-            <li><a href='03-data-visualization/index.html'>03-data-visualization</a></li>
-            <li><a href='04-speech-recognition/index.html'>04-speech-recognition</a></li>
-        </ul>
-        <br/>
-        <h3>Labs</h3>
-        <ul>
-            <li><a href='lab-chart/index.html'>lab-chart</a></li>
-            <li><a href='lab-animation/index.html'>lab-animation</a></li>
-            <li><a href='lab-notebook/index.html'>lab-notebook</a></li>
-            <li><a href="lab-phaser-drag-n-drop/index.html">lab-drag-and-drop</a></li>
-            <li><a href="lab-resume/index.html">lab-resume</a></li>
-            <li><a href="lab-audio/index.html">lab-audio</a></li>
-            <li><a href="lab-video/index.html">lab-video</a></li>
-        </ul>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CISC3610 EM6 - Ving's Website - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="resource/logo.png" width="85" height="33" alt="">
+            </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mr-auto">
+                <!--Home-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <!-- Drop down bar for Resume-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Resume
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="resume-summary.html">Summary</a>
+                      <a class="dropdown-item" href="resume-summary.html#education">Education and Certifications</a>
+                      <a class="dropdown-item" href="resume-summary.html#experience">Experience</a>
+                    </div>
+                </li>
+
+                <!--Assignments--> 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Assignments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="assignment1-2.html">Assignment 1: Cartoon | Assignment 2: Simple Animation</a>
+                      <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
+                      <a class="dropdown-item" href="assignment4.html">Assignment 4: Phaser Game Project</a>
+                      <a class="dropdown-item" href="assignment5.html">Assignment 5: Speech Recognition</a>
+                    </div>
+                </li>
+
+                <!--Labs-->  
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Labs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="lab1-2.html">Lab 1: Canvas Chart | Lab 2: Animated Count </a>
+                      <a class="dropdown-item" href="lab3-4.html">Lab 3: Simple Notebook | Lab 4: Phaser Drag & Drop </a>
+                      <a class="dropdown-item" href="lab5-6.html">Lab 5: Audio | Lab 6: Video IFrames</a>
+                    </div>
+                </li>
+
+                <!--Github Link-->
+                <li class="nav-item">
+                    <a href="https://github.com/breaded-fish/breaded-fish.github.io" class="nav-link">Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Scripts required for Nav Bar-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!--Main location of code-->
+
+    <div class="container">
+        <div class="row text-center my-splash">
+            <div class="col align-self-center">
+                <h1 class="display-3">Welcome! CISC3610 EM6</h1>
+                <h2>Please find links to everything on the navbar.</h2>
+            </div>
+        </div> 
+    </div>
+
+
+
+</body>
+
 </html>
