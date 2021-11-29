@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Man Walking Forwards But Back in Time</title>
+	<link rel="stylesheet" href = "Man Walking But Not.css">
+
+	<style>
+.bubble {
+    position: relative;
+    background: #c4aeae;
+    color: #FFFFFF;
+    font-family: Times New Roman;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #c4aeae transparent;
+    border-width: 23px 11px 0;
+    bottom: -23px;
+    left: 15%;
+    margin-left: -16px;
+}
+
+</style>
+</head>
+
+<body>
+	<a href="#" onclick="play()">
+	<audio id="audio" src="Song.mp3" loop="loop"></audio>
+
+	<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+	<div id="man"></div>
+	<div id="rockymoutains"></div>
+	<div class="bubble">Jeez, I'm definitely moving backwards!</div>
+	</a>
+</body>
+</html>
