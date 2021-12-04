@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style = 'width:50%'></div>
+    <canvas id = "bar" width="1" height="1"></canvas>
+  </div>
+  <div style = 'width:50%'></div>
+    <canvas id = "doughnut" width="1" height="1"></canvas>
+  </div>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+
+new Chart (document.getElementById("bar"), {
+    type: 'bar',
+    data: {
+      labels: ["11040", "10018", "10039", "11001", "10040", "10018", "10038", "10014","10005","11364"],
+      datasets: [
+        {
+          label: "Gas Consumption in thousands",
+          backgroundColor: ["#EFAEA0", "#D58B7A","#C78374","#7A4236","#AF3F25","#E85D41","#EA5233","#EA4726","#83230D","#A32B0F"],
+          data: [378, 476, 81, 53, 445, 476, 430, 213, 27, 269]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Natural Gas Consumption by ZIP Code for Residential Buildings (in thousands) by Shake Kuryachaya'
+      }
+    }
+});
+
+</script>
+</body >
+</html>
