@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AudioLab</title>
+    </head>
+    <body>
+        <h1>Sound Machine</h1>
+        <div id="buttons" style="border: 4px solid pink; padding: 2rem; display: inline-flex">
+
+            <button onclick="playAudio('clap')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="clap"><source src="assets/audio/clp_basics.wav" type="audio/mp3"></audio>
+                <b>Clap</b>
+            </button>
+
+            <button onclick="playAudio('open hihat')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="open hihat"><source src="assets/audio/Hihat-808-Open.aif" type="audio/mp3"></audio>
+                <b>Open Hihat</b>
+            </button>
+
+            <button onclick="playAudio('snap')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="snap"><source src="assets/audio/SD Snap.wav" type="audio/mp3"></audio>
+                <b>Snap</b>
+            </button>
+
+            <button onclick="playAudio('kick')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="kick"><source src="assets/audio/Lex Kick (1).wav" type="audio/mp3"></audio>
+                <b>Kick</b>
+            </button>
+
+            <button onclick="playAudio('flute')" type="button" style="padding: 2rem; margin: 0 0.5rem">
+                <audio id="flute"><source src="assets/audio/FluteClean2_C4.wav" type="audio/mp3"></audio>
+                <b>Flute</b>
+            </button>
+
+        </div>
+        <br/><br/>
+        <a href='https://github.com/shakekuryachaya/CISC3610'>Click here to go back to portfolio</a>
+        <script>
+            function playAudio(el) {
+                let audio = document.getElementById(el);
+                audio.play();
+            }
+        </script>
+    </body>
+</html>
